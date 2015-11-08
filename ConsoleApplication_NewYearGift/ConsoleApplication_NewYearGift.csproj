@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CD733524-927B-49F6-BE11-3A1EF43671EE}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleApplication_NewYearGift</RootNamespace>
+    <AssemblyName>ConsoleApplication_NewYearGift</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\MyArrayList.cs" />
+    <Compile Include="Collections\MyCollections.cs" />
+    <Compile Include="Collections\MyDictionary.cs" />
+    <Compile Include="Collections\MyHashTable.cs" />
+    <Compile Include="Collections\MyLinkedList.cs" />
+    <Compile Include="Collections\MyQueue.cs" />
+    <Compile Include="Collections\MyStack.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Gift\Sweets\Candy.cs" />
+    <Compile Include="Gift\Sweets\Caramel\Caramel.cs" />
+    <Compile Include="Gift\Sweets\Caramel\CaramelInChocolate.cs" />
+    <Compile Include="Gift\Sweets\Caramel\CaramelLollipop.cs" />
+    <Compile Include="Gift\Sweets\Caramel\LollipopFruitty.cs" />
+    <Compile Include="Gift\Sweets\Caramel\LollipopMilky.cs" />
+    <Compile Include="Gift\Sweets\Caramel\LollipopMinty.cs" />
+    <Compile Include="Gift\Sweets\Caramel\LollopopWithFilling.cs" />
+    <Compile Include="Gift\Sweets\Caramel\CaramelMedical.cs" />
+    <Compile Include="Gift\Sweets\Chocolate Candy\ChocolateCandy.cs" />
+    <Compile Include="Gift\Sweets\Chocolate Candy\ChocolateCandyWithCream.cs" />
+    <Compile Include="Gift\Sweets\Chocolate Candy\ChocolateCandyWithJelly.cs" />
+    <Compile Include="Gift\Sweets\Chocolate Candy\ChocolateCandyWithNuts.cs" />
+    <Compile Include="Gift\Sweets\Chocolate Candy\ChocolateCandyWithFilling.cs" />
+    <Compile Include="Gift\Gift.cs" />
+    <Compile Include="Gift\Sweets\Iris\Iris.cs" />
+    <Compile Include="Gift\Sweets\Iris\IrisCream.cs" />
+    <Compile Include="Gift\Sweets\Iris\IrisForChildren.cs" />
+    <Compile Include="Gift\Sweets\Iris\IrisWithFilling.cs" />
+    <Compile Include="Gift\Sweets\ISweets.cs" />
+    <Compile Include="Gift\Sweets\Other\Milky.cs" />
+    <Compile Include="Gift\Sweets\Chocolate Candy\ChocolateCandyTruffle.cs" />
+    <Compile Include="Gift\Sweets\Other\JellyBean.cs" />
+    <Compile Include="Gift\Sweets\Other\Roasting.cs" />
+    <Compile Include="Gift\Sweets\Other\WaffleCandy.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
